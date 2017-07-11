@@ -10,10 +10,10 @@ $lint_pattern = "http://yourwebsite.com/articles?page=[%page%]"; // this is samp
 $link_replace = "[%page%]"; this is part of above pattern that will be replaced with page number;
 
 new pagination(
-				$pages_count,
-				$active_page,
-				$lint_pattern,
-				$link_replace,
-				1 // echo?
-			);
+	$pages_count,
+	$active_page,
+	$lint_pattern,
+	$link_replace,
+	1 // echo? ... or 0 to get the html results
+);
 ```
