@@ -8,6 +8,7 @@ use correct path for href
 ```
 also add javascript file to your html. you can place it in head section or anywhere else.
 use correct path for src
+(you need to have jquery file added already.)
 ```javascript
 <script type="text/javascript" src="Erkin-Pagination.js"></script>
 ```
