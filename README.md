@@ -31,6 +31,16 @@ new pagination(
 );
 ```
 
+the main thing to do in js codes is to finaly run these lines of codes :
+```javascript
+pagination.init(
+	15,							// example; all pages count
+	5,							// example; active page number
+	"http://yourwebsite.com/articles?page=[%page%]",	// example; link pattern
+	"[%page%]"						// example; link replace part
+);
+```
+
 the javascript file is for ajax usage purpose. to use that you need to handle the click event.
 these lines is only a working pagination example. you need to do more things like ajax request and stuff like that in between;
 ```javascript
