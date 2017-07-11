@@ -13,7 +13,7 @@ use correct path for src
 ```
 
 at php serverside simply use this code :
-```
+```php
 <?php
 include "Erkin-Pagination.php";
 $pages_count = 15; // all pages count
