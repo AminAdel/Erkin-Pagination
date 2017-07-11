@@ -29,3 +29,44 @@ new pagination(
 	1 // echo? ... or 0 to get the html results
 );
 ```
+
+the javascript file is for ajax usage purpose. to use that you need to handle the click event.
+these lines is only a working pagination example. you need to do more things like ajax request and stuff like that in between;
+```javascript
+$('#pagination .li').click(function(e) {
+	if ($(this).hasClass('dots')) return false;
+			
+	// only left click will be accepted;
+	if (e.which != 1) return;
+	
+	
+	// get pages-count :
+	var pagesCount = $($('#pagination .li')[$('#pagination .li').length - 2]).find('a').html()
+	
+	
+	// get clicked page number :
+	var page = parseInt($(this).find('a').html());
+	if ($(this).hasClass('next')) {
+		page = parseInt($('#pagination .li' + '.active a').html()) + 1;
+	}
+	else if ($(this).hasClass('prev')) {
+		page = parseInt($('#pagination .li' + '.active a').html()) - 1;
+	}
+	
+	
+	// set linkPattern :
+	var linkPattern = "http://yourwebsite.com/articles?page=[%page%]";
+	var linkReplace = "[%page%]";
+	
+	
+	// pagination update :
+	pagination.init(
+		pagesCount,
+		page,
+		linkPattern,
+		linkReplace
+	);
+	
+	return false;
+});
+```
