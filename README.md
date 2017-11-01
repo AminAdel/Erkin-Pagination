@@ -1,4 +1,4 @@
-# Erkin-Pagination version 1.1.0
+# Erkin-Pagination version 1.2.0
 a back-end and front-end pagination system with PHP and JavaScript
 
 you will need to insert css file in head section of your html codes :
