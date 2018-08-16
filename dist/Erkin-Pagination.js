@@ -1,8 +1,13 @@
 /*****************************/
+// version 1.3.0    :   2018.08.16  :   1397.05.25
 // version 1.1.0    :   2017.07.11  :   1396.04.20
 /*****************************/
 $(document).ready(function () {
 	pagination = new class_pagination();
+	
+	$('#pagination .li.dots a, #pagination .li.disabled a').click(function(e) {
+		return false;
+	});
 });
 
 
