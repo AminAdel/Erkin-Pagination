@@ -1,4 +1,4 @@
-# Erkin-Pagination version 1.2.2
+# Erkin-Pagination version 1.3.0
 a backend and frontend pagination system with PHP and JavaScript
 
 # Preview :

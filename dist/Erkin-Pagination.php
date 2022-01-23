@@ -1,6 +1,6 @@
 <?php
 /*
- * Erkin-Pagination version 1.1.0	2017.07.11
+ * Erkin-Pagination version 1.3.0	2018.08.16	1397.05.25
  * https://github.com/AminAdel/Erkin-Pagination
  */
 
